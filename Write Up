@@ -1,0 +1,27 @@
+Wikan Setiaji
+160688413
+
+Latihan Project Viral
+1. 	a. Tidak terjadi compile error
+	b. Muncul pesan error 404, hal ini terjadi karena path /viral sudah tidak ada karena diganti menjadi viral2jari
+	c. @RequestMapping("/viral") berguna untuk menjalankan fungsi dibawahnya (merender viral.html) jika /viral diakses di web
+
+2.	a. Tidak
+	b. Tidak ada error karena nama fungsi index hanya nama saja dan tetap akan dijalankan ketika /viral diakses di web
+3.	a. Tidak
+	b. Akan ada error 500 karena file template .html yang dituju tidak ditemukan
+	c. Untuk memilih template html mana yang akan di render ketika fungsi dijalankan
+
+Latihan Request Parameter
+1.	Tulisan In My Feeling tidak akan muncul karena tulisan di dalam div akan di replace oleh text didalam th
+2.	Akan ada error 404 di /challenge karena url tidak di handle di dalam controller. Namun /viral/challenge akan mengakses fungsi challenge dan merender challenge.html
+3.	a. Akan ada error bad request karena request html memerlukan parameter bernama name
+	b. Tidak akan ada error karena parameter name tidak required namun {name} yang ada di template html akan menjadi null karena parameter name tidak terisi
+	c. Tidak akan ada error karena parameter name tidak required dan {name} uang ada di template akan menjadi kiki karena default content dari parameter name adalah kiki
+
+Latihan Path Variable
+1.	{name} di template akan berubah jadi null karena parameter di path tidak diisi
+2. 	{name} di template akan berubah jadi KB karena parameter di path kosong dan default valuenya KB
+3.	{name} di template akan berubah jadi kiki
+
+
